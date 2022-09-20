@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { UsersList } from "./components";
+import students from "./data";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UsersList students={students} />
     </div>
   );
 }
 
 export default App;
+
+// 1. Users list displayed, Form to create a new users.
+// 2. Once somebody fills the new user form, we want to show the user on the display list.

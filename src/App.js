@@ -1,10 +1,11 @@
 import { UsersList } from "./components";
+import GithubUsers from "./components/GithubUsers";
 import students from "./data";
 
 function App() {
   return (
     <div className="App">
-      <UsersList students={students} />
+      <GithubUsers />
     </div>
   );
 }
